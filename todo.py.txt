@@ -1,0 +1,13 @@
+todo_list = []
+
+while True:
+    task = input("Add task (or type 'exit'): ")
+
+    if task.lower() == "exit":
+        break
+
+    todo_list.append(task)
+
+print("\nYour Tasks:")
+for t in todo_list:
+    print("-", t)
